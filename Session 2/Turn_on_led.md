@@ -1,3 +1,3 @@
-برای ساختن پروژه نیاز به این داریم که نرم افزار های MXCUBE و KEIL و STLINK را نصب کنیم.(قبل از همه این نرم افزار ها  باید اول JAVARuntime ورژن 1.8 به بالا رو رسم کنیم.
+Before installing everything install JAVARuntime v1.8 or above. After that you need to install STMCUBEMX, KEIL and STLINK.
 
-یسیسیسی
+s
