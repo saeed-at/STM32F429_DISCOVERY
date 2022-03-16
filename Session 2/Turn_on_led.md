@@ -22,7 +22,7 @@ There are `3` steps to turn on LED(which is connected to `PG13` in `stm32f429zi`
  - [x] Then click on `Generate code` button and then in the new window(which will popup after clicking) set the path and name of the project and finally
  set the `Toolchain / IDE` to `MKD-ARM V5`.
    <p align="left">
-  <img 
+   <img 
     width="1200"
     height="600"
     src="../images/s2/step3.png"
@@ -30,13 +30,33 @@ There are `3` steps to turn on LED(which is connected to `PG13` in `stm32f429zi`
 </p>
  
  After these steps a window will popup and you can choose `Open project` to move your setup configurations to  `Keil`.
+   <p align="left">
+   <img 
+    width="1200"
+    height="600"
+    src="../images/s2/step4.png"
+  >
+</p>
 
-Then in `Keil` from the `project` window on the left, follow this path to get to the `main.c' file, `/Project:Session2_Turn_on_led/Session2_Turn_on_led/Application/user/main.c`.
+Then in `Keil` from the `project` window on the left, follow this path to get to the `main.c` file, `/Project:Session2_Turn_on_led/Session2_Turn_on_led/Application/user/main.c`.
+
+   <p align="left">
+   <img 
+    width="800"
+    height="600"
+    src="../images/s2/step4.5.png"
+  >
+</p>
 
 Then look for `while(1)` loop and write yout code between `/* USER CODE BEGIN 3 */` and `  /* USER CODE END 3 */`. because we just want to turn on an led, we use one line code as bellow :
 ```
   HAL_GPIO_WritePin(GPIOG,GPIO_PIN_13,GPIO_PIN_SET);
 ```
+   <p align="left">
+   <img 
+    src="../images/s2/step5.png"
+  >
+</p>
 
 * To turn on an led we can put this code before the `while(1)` and it will work as the same.
 
