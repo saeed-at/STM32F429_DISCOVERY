@@ -2,7 +2,7 @@ Before installing everything install `JAVARuntime` v1.8 or above. After that you
 
 There are `3` steps to turn on LED(which is connected to `PG13` in `stm32f429zi` discovery board):
  - [x]  Run `STM32CubeMX` and choose MCU selector, and search the board that you are using.( I'm using STM32F429)
- <p align="left">
+ <p align="center">
   <img 
     width="1200"
     height="600"
@@ -11,7 +11,7 @@ There are `3` steps to turn on LED(which is connected to `PG13` in `stm32f429zi`
 </p>
 
  - [x] On the `Clock Configuration` tab, set the the `HCLK` and `press Enter`, this can be set up to `180 MHz` in stm32f429.
-  <p align="left">
+  <p align="center">
   <img 
     width="1200"
     height="600"
@@ -21,7 +21,7 @@ There are `3` steps to turn on LED(which is connected to `PG13` in `stm32f429zi`
 
  - [x] Then click on `Generate code` button and then in the new window(which will popup after clicking) set the path and name of the project and finally
  set the `Toolchain / IDE` to `MKD-ARM V5`.
-   <p align="left">
+   <p align="center">
    <img 
     width="1200"
     height="600"
