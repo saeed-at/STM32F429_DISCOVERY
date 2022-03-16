@@ -6,7 +6,7 @@ There are `3` steps to turn on LED(which is connected to `PG13` in `stm32f429zi`
   <img 
     width="300"
     height="300"
-    src="a.png"
+    src="../images/step 1.png"
   >
 </p>
  - [x] On the `Clock Configuration` tab, set the the `HCLK` and `press Enter`, this can be set up to `180 MHz` in stm32f429.
