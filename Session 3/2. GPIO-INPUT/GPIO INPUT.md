@@ -8,7 +8,7 @@ To find the `User's key` pin we should see the `schematic` of discovery board an
   <img 
     width="1200"
     height="600"
-    src="../../images/s2/user_pin_scheme.png"
+    src="../../images/s3/user_pin_scheme.png"
   >
 </p>
 
@@ -20,7 +20,7 @@ In oder to write our code we can use code as bellow, considering that the `HAL_D
   <img 
     width="1200"
     height="600"
-    src="../../images/s2/gpio_input.png"
+    src="../../images/s3/gpio_input.png"
   >
 </p>
 
