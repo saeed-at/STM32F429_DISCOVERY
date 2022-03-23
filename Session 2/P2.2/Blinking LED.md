@@ -6,6 +6,6 @@ For this practice we setup a new project according to `Turn_LED_ON`, and then we
   <img 
     width="1200"
     height="600"
-    src="../images/s2/Blinkingled.png"
+    src="../../images/s2/Blinkingled.png"
   >
 </p>
