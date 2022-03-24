@@ -14,9 +14,31 @@ As we can see the `User pin` is normally connected to `GND` and it has the value
 
 In oder to write our code we can use code as bellow, considering that the `HAL_Delay(100);` used for software debouncing and we use `ReadPin` method to read the pin's `state`.
 
- <p align="center">
-  <img 
-    src="../../images/s3/gpio_input.png"
-  >
-</p>
+```c
+ /* USER CODE BEGIN 2 */
+	 int pin_state;
+  /* USER CODE END 2 */
 
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+		
+		pin_state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
+			if (pin_state == GPIO_PIN_SET){
+				//DELAY FOR DEBOUNCING
+				HAL_Delay(100);
+				if (pin_state == GPIO_PIN_SET){
+					HAL_GPIO_WritePin(GPIOG,GPIO_PIN_13,GPIO_PIN_SET);
+					HAL_Delay(100);
+					HAL_GPIO_WritePin(GPIOG,GPIO_PIN_13,GPIO_PIN_RESET);
+					HAL_Delay(100);
+				}
+			}
+  }
+  /* USER CODE END 3 */
+}
+```
