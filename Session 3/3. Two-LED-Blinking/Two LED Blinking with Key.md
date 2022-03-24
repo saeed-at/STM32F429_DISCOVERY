@@ -2,7 +2,7 @@ We want to write a code that when we press a `key`, `LED1` starts to blink and w
 
  <p align="center">
   <img 
-    src="../../images/s3/two_led_blinking.png"
+    src="../../images/s3/2led_blinking.png"
   >
 </p>
 
