@@ -38,25 +38,21 @@ There are `3` steps to turn on LED(which is connected to `PG13` in `stm32f429zi`
   >
 </p>
 
-Then in `Keil` from the `project` window on the left, follow this path to get to the `main.c` file, `/Project:Session2_Turn_on_led/Session2_Turn_on_led/Application/user/main.c`.
-
-   <p align="left">
-   <img 
-    width="800"
-    height="600"
-    src="../../images/s2/step4.5.png"
-  >
-</p>
-
+Then in `Keil` from the `project` window on the left, follow this path to get to the `main.c` file, 
 Then look for `while(1)` loop and write yout code between `/* USER CODE BEGIN 3 */` and `  /* USER CODE END 3 */`. because we just want to turn on an led, we use one line code as bellow :
+
+
+```c
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+		HAL_GPIO_WritePin(GPIOG,GPIO_PIN_13,GPIO_PIN_SET);
+
+  }
 ```
-  HAL_GPIO_WritePin(GPIOG,GPIO_PIN_13,GPIO_PIN_SET);
-```
-   <p align="left">
-   <img 
-    src="../../images/s2/step5.png"
-  >
-</p>
+
 
 * To turn on an led we can put this code before the `while(1)` and it will work as the same.
 
