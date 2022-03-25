@@ -5,6 +5,8 @@ In this case our 7-segment is common-cathod in the schme is as below:
     src="../../images/s3/7-segment.png"
   >
 </p>
+The code is as below:
+
 ```c
   unsigned char x[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x67};
 
